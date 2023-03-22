@@ -1,0 +1,48 @@
+.transact_main {
+display: flex;
+border-collapse: collapse;
+line-height: 1.1;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+background: radial-gradient(farthest-corner at 50% 50%, white, #DCECF8);
+color: #0C213B;
+}
+
+.transact_tab {
+font-size: 0.8em;
+padding: 5px 7px;
+border: 1px solid #A9E2CC;
+}
+
+.transact_thead {
+font-family: annabelle, cursive;
+font-weight: bold;
+font-size: 2em;
+padding: 10px;
+color: #5a22df;
+text-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
+}
+
+.transact_tbody {
+padding: 10px;
+border: 1px solid #A9E2CC;
+}
+
+.transact_tr {
+font-size: 0.8em;
+    padding: 5px 7px;
+    border: 1px solid #A9E2CC;
+}
+
+table {
+    width: 100%;
+}
+
+element.style {
+    height: 250vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: rgb(1, 1, 1);
+    flex-direction: column;
+}
