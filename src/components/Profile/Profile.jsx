@@ -35,7 +35,7 @@ Profile.propTypes = {
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   stats: PropTypes.object.isRequired,
-  //   Repeta video
+
 };
 
 export default Profile;
