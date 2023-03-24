@@ -5,6 +5,9 @@ line-height: 1.1;
 font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 background: radial-gradient(farthest-corner at 50% 50%, white, #DCECF8);
 color: #0C213B;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 50px;
 }
 
 .transact_tab {
@@ -34,15 +37,15 @@ font-size: 0.8em;
 }
 
 table {
-    width: 100%;
+    width: 50%;
 }
 
 element.style {
-    height: 250vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 20px;
     color: rgb(1, 1, 1);
     flex-direction: column;
 }

@@ -14,10 +14,10 @@ export const App = () => {
   return (
     <div
       style={{
-        height: '250vh',
+        height: '500vh',
         display: 'flex',
       
-        fontSize: 30,
+        fontSize: 20,
         color: '#010101',
         alignItems: 'center',
         justifyContent: 'center',
