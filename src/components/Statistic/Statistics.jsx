@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
-import css from './Statistics.module.css';
+import React from 'react';
+import styles from './Statistics.module.css';
+
 
 
 function randColor() {
@@ -9,22 +11,21 @@ function randColor() {
 }
 
 function Statistics({ title, stats }) {
-  
   return (
-    <section className={css.statistics_main}>
-      <section className={css.statistics_title}>
+    <section className={styles.statistics_main}>
+      <section className={styles.statistics_title}>
         {title && <h2>{title}</h2>}
 
-        <ul className={css.statistics_list}>
+        <ul className={styles.statistics_list}>
           {stats.map(({ id, label, percentage }) => {
             return (
               <li
-                className={css.statistics_item}
+                className={styles.statistics_item}
                 key={id}
                 style={{ backgroundColor: randColor() }}
               >
-                <span className={css.statistics_label}>{label}</span>
-                <span className={css.statistics_percentage}>{percentage}</span>
+                <span className={styles.statistics_label}>{label}</span>
+                <span className={styles.statistics_percentage}>{percentage}</span>
               </li>
             );
           })}
