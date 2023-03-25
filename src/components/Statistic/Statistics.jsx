@@ -2,8 +2,6 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import styles from './Statistics.module.css';
 
-
-
 function randColor() {
   const r = () => Math.floor(Math.random() * 256);
   const colorBack = 'rgb(' + r() + ',' + r() + ',' + r() + ',' + 0.3 + ')';
@@ -13,7 +11,7 @@ function randColor() {
 function Statistics({ title, stats }) {
   return (
     <section className={styles.statistics_main}>
-      <section className={styles.statistics_title}>
+      <h2 className={styles.statistics_title}>
         {title && <h2>{title}</h2>}
 
         <ul className={styles.statistics_list}>
@@ -25,19 +23,21 @@ function Statistics({ title, stats }) {
                 style={{ backgroundColor: randColor() }}
               >
                 <span className={styles.statistics_label}>{label}</span>
-                <span className={styles.statistics_percentage}>{percentage}</span>
+                <span className={styles.statistics_percentage}>
+                  {percentage}
+                </span>
               </li>
             );
           })}
         </ul>
-          </section>
-        </section>
+      </h2>
+    </section>
   );
 }
 
-
 Statistics.propTypes = {
   title: PropTypes.string,
+  stats: PropTypes.string,
 };
 
 export default Statistics;

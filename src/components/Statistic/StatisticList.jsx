@@ -22,7 +22,7 @@ function StatisticList({ stats }) {
 }
 StatisticList.propTypes = {
   title: PropTypes.string,
-
+  stats: PropTypes.string,
   data: PropTypes.number.isRequired,
  
 };

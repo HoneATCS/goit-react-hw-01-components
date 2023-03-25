@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styles from './Profile.module.css';
 
 function Profile({ avatar, username, tag, location, stats }) {
-    return (
+  return (
     <div className={styles.profile_main}>
       <div className={styles.profile_description}>
         <img src={avatar} alt="User avatar" className={styles.profile_avatar} />
@@ -28,14 +28,12 @@ function Profile({ avatar, username, tag, location, stats }) {
   );
 }
 
-
 Profile.propTypes = {
   avatar: PropTypes.string.isRequired,
   username: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   stats: PropTypes.object.isRequired,
-
 };
 
 export default Profile;
