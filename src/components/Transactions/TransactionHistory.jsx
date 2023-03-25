@@ -39,6 +39,7 @@ function TransactionHistory({ items }) {
     </section>
   );
 }
+
 TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
