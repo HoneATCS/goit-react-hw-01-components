@@ -11,7 +11,7 @@ function randColor() {
 function Statistics({ title, stats }) {
   return (
     <section className={styles.statistics_main}>
-      <h2 className={styles.statistics_title}>
+      <div className={styles.statistics_title}>
         {title && <h2>{title}</h2>}
 
         <ul className={styles.statistics_list}>
@@ -30,7 +30,7 @@ function Statistics({ title, stats }) {
             );
           })}
         </ul>
-      </h2>
+      </div>
     </section>
   );
 }
